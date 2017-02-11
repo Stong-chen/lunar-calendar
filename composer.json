@@ -1,0 +1,21 @@
+{
+    "name": "yzha5/lunar-calendar",
+    "description": "PHP版中国农历",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yangzhao",
+            "email": "yzha5@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "yzha5\\LunarCalendar\\": "src/"
+        }
+    }
+}
