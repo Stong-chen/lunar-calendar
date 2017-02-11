@@ -12,6 +12,13 @@ composer require yzha5/lunar-calendar
 
 使用
 ----
+
+在config/app.php中的providers数组中添加
+```php
+yzha5\LunarCalendar\LunarCalendar::class,
+yzha5\LunarCalendar\LunarCalendarException::class,
+```
+
 ```php
 <?php
 
