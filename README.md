@@ -1,6 +1,7 @@
 LunarCalendar
 ======
 一个PHP版中国阴历转换工具，用于将阳历日期转换为中国阴历日期。
+代码来自https://github.com/guojikai/plunar
 
 安装
 ----
@@ -16,17 +17,10 @@ composer require yzha5/lunar-calendar
 <?php
 
 use yzha5\LunarCalendar;
-use yzha5\LunarCalendarException;
 
-try {
-    //支持字符串输入形式 LunarCalendar::solarToLunar('1984-09-22'); 
+	//支持字符串输入形式 LunarCalendar::solarToLunar('1984-09-22'); 
 	$lunar_array = LunarCalendar::solarToLunar(1984, 9, 22);
-} catch (LunarCalendarException $e) {
-	echo $e->getMessage();
-	exit;
-}
-
-var_dump($lunar_array);
+	dump($lunar_array);
 
 ?>
 ```
